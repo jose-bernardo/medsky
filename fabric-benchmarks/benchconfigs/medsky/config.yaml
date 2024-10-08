@@ -1,0 +1,42 @@
+test:
+  workers:
+    number: 25
+  rounds:
+    - label: Create a record.
+      txNumber: 10000
+      rateControl:
+        type: fixed-load
+        opts:
+          transactionLoad: 25
+      workload:
+        module: chaincode/medsky/createRecord.js
+    - label: Query a record.
+      txDuration: 300
+      rateControl:
+        type: fixed-load
+        opts:
+          transactionLoad: 25
+      workload:
+        module: chaincode/medsky/readRecordTx.js
+        arguments:
+          assets: 500
+    - label: Query a record (evaluation).
+      txDuration: 300
+      rateControl:
+        type: fixed-load
+        opts:
+          transactionLoad: 25
+      workload:
+        module: chaincode/medsky/readRecord.js
+        arguments:
+          assets: 500
+    - label: Query an access
+      txDuration: 300
+      rateControl:
+        type: fixed-load
+        opts:
+          transactionLoad: 25
+      workload:
+        module: chaincode/medsky/readAccess.js
+        arguments:
+          assets: 500

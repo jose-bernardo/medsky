@@ -1,0 +1,1 @@
+{"version":3,"file":"access.d.ts","sourceRoot":"","sources":["../src/access.ts"],"names":[],"mappings":"AAEA,qBACa,MAAM;IAEV,OAAO,CAAC,EAAE,MAAM,CAAC;IAGjB,SAAS,EAAE,MAAM,CAAM;IAGvB,SAAS,EAAE,MAAM,EAAE,CAAM;IAGzB,SAAS,CAAC,EAAE,MAAM,CAAc;CACxC"}

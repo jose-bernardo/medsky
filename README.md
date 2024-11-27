@@ -1,5 +1,11 @@
 # MedSky
 
+MedSky is a storage system that combines [Hyperledger Fabric](https://github.com/hyperledger/fabric) and [RockFS](https://github.com/davidmatos/RockFS) multi-cloud storage to ensure integrity and availability of electronic health records. It uses a forked version of [Medplum](https://github.com/medplum/medplum) as the backend server to interact with the blockchain network and verify the correctness of user transactions with seamless throughput.
+
+# Architecture
+
+![alt text](https://raw.githubusercontent.com/jose-bernardo/medsky/refs/heads/main/medsky-architecture.png)
+
 ## Hyperledger Network
 
 ### Requirements
